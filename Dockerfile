@@ -2,8 +2,8 @@ FROM alpine
 
 ENV JAVA_HOME /usr/lib/jvm/default-jvm
 ENV PATH ${JAVA_HOME}/bin:${PATH}
-ENV HADOOP_MASTER_HOST
-ENV HADOOP_TYPE
+ENV HADOOP_MASTER_HOST localhost
+ENV HADOOP_TYPE master
 
 RUN apk -U update && \
   apk add bash curl openssh-client wget openssl openjdk8-jre supervisor && \
