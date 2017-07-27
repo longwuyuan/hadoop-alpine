@@ -18,4 +18,4 @@ COPY start.sh /start.sh
 
 EXPOSE 8088 50070
 
-CMD ["/bin/sh","/entrypoint.sh"]
+CMD ["/bin/sh","/start.sh"]
