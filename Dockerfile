@@ -12,7 +12,7 @@ RUN apk -U update && \
   mv hadoop-2.8.1 /var/hadoop && \
   rm -rf /var/hadoop/share/doc && \
   mkdir -p /var/hadoop_data/hdfs/namenode && \
-  mkdir -p /var/hadoop_data/hdfs/datanode && \
+  mkdir -p /var/hadoop_data/hdfs/datanode
 
 COPY start.sh /start.sh
 
